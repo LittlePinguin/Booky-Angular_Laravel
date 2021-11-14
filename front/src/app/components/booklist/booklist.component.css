@@ -1,0 +1,91 @@
+.booklist-container {
+  justify-content: center;
+  padding: 140px 0;
+  background-image: url("../../../images/bg_wishlist.png");
+  background-size: cover;
+}
+
+.booklist-container .searchbar {
+  display: flex;
+  width: 50%;
+  margin-left: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 150px;
+  border-radius: 30px;
+}
+
+.booklist-container .searchbar input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  width: 90%;
+  font-size: 24px;
+}
+
+.big-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 50px;
+}
+
+.book-box {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  border-radius: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.book-box:hover {
+  transform: scale(1.2);
+}
+
+.book-box img {
+  height: 200px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.book-box .details {
+  display: block;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.book-box .title {
+  /* position: absolute; */
+  font-weight: bold;
+}
+
+.book-box .author {
+  color: rgb(85, 85, 85);
+  font-weight: 500;
+}
+
+.book-box .separation {
+  height: 1px;
+  width: 50px;
+  background-color: gray;
+}
+
+.book-box .followers {
+  display: flex;
+  justify-content: right;
+  /* margin-top: 55%; */
+}
+
+.book-box .icon {
+  font-size: 20px;
+}
+
+.book-box .icon.heart {
+  color: red;
+  margin-left: 5px;
+}

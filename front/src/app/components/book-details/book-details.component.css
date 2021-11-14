@@ -1,0 +1,69 @@
+.bookdetails-container {
+  position: absolute;
+  height: -webkit-fill-available;
+  width: 100%;
+  padding-top: 140px;
+  background-image: url("../../../images/bg_wishlist.png");
+  background-size: cover;
+}
+
+.bookdetails-container .light-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  /* height: 100%; */
+  margin-left: 13%;
+  padding: 100px 50px 70px 50px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.light-container .img-block img {
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.light-container .img-block .options {
+  display: flex;
+}
+
+.img-block .options p {
+  background-color: rgb(111, 207, 111);
+  border-radius: 5px;
+  padding: 5px 0;
+  text-align: center;
+  margin: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.img-block .options p:hover {
+  border: 2px solid white;
+  color: white;
+}
+
+.light-container .text {
+  font-size: 18px;
+  display: block;
+  margin-left: 50px;
+}
+
+.light-container .text .title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.light-container .text .details {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.light-container .text .details p {
+  margin-bottom: 20px;
+}
+
+.light-container .text .synopsis {
+  line-height: 1.4em;
+}

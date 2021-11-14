@@ -1,0 +1,8 @@
+<div class="home-container">
+    <div class="banniere">
+        <p>Discover new <br> <span>books</span> to read !</p>
+        <div *ngFor="let book of books; let index=index">
+            <a [routerLink]="book.id" routerLinkActive="active" ><img class="cover-{{index}}" src={{book.image}} alt=""/></a>
+        </div>
+    </div>
+</div>

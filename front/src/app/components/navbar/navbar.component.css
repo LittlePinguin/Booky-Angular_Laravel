@@ -1,0 +1,69 @@
+.navbar-container {
+  position: absolute;
+  width: -webkit-fill-available;
+  z-index: 10;
+  padding: 40px 30px 10px 30px;
+  background-color: rgba(70, 57, 39, 0.5);
+  font-family: "Henny Penny", cursive;
+}
+
+.navbar-container .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-container .links .logo {
+  font-family: "Henny Penny", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  text-shadow: black 5px 3px;
+}
+
+.navbar-container .links .logo:hover {
+  color: black;
+  text-shadow: white 5px 3px;
+}
+
+.navbar-container .links ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-container .links ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.navbar-container .links ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  transition: all 0.3s;
+}
+
+.navbar-container .links ul a:hover {
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  z-index: 1;
+}
+
+.links ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  /* background-color: rgb(117, 185, 245); */
+  background-color: blanchedalmond;
+  border-radius: 10px;
+}
+
+.links ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}

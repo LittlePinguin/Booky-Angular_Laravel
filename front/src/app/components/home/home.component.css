@@ -1,0 +1,58 @@
+.home-container {
+  position: absolute;
+  top: 0;
+  height: -webkit-fill-available;
+  width: 100%;
+  background-image: url("../../../images/bg_banniere.png");
+  background-size: cover;
+  z-index: 0;
+  font-family: "Henny Penny", cursive;
+}
+
+.banniere {
+  display: flex;
+  justify-content: right;
+  margin-right: 70px;
+  margin-top: 15%;
+}
+
+.banniere p {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 75px;
+  margin-top: 130px;
+  margin-right: 220px;
+}
+
+.banniere span {
+  color: rgb(0, 38, 141);
+}
+
+.banniere h1 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Henny Penny", cursive;
+  margin-top: 200px;
+  color: rgb(5, 47, 109);
+}
+
+.banniere img {
+  height: 300px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.banniere img:hover {
+  transform: scale(1.2);
+}
+
+.banniere .cover-0,
+.banniere .cover-2 {
+  margin-top: 50%;
+}
