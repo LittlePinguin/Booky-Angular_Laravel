@@ -9,18 +9,20 @@
         <mat-icon>search</mat-icon>
     </div>
     <div class="big-box">
-        <div class="book-box" *ngFor="let book of books">
-            <img src={{book.image}} alt="">
-            <div class="details">
-                <p class="title">{{ book.title }}</p>
-                <p class="author">{{ book.author }}</p>
-                <div class="followers">
-                    <p>{{ book.followers }}</p>
-                    <mat-icon class="icon heart">favorite</mat-icon>
-                    <mat-icon class="icon bookmark">bookmark_border</mat-icon>
-                    <mat-icon class="icon read">done</mat-icon>
+        <div class="book-box" *ngFor="let book of books" [routerLink]="book.id" routerLinkActive="active">
+                <img src={{book.image}} alt="">
+                <div class="details">
+                    <div class="text">
+                        <p class="title">{{ book.title }}</p>
+                        <p class="author">{{ book.author }}</p>
+                    </div>
+                    <!-- <div class="followers">
+                        <p>{{ book.followers }}</p>
+                        <mat-icon class="icon heart">favorite</mat-icon>
+                        <mat-icon class="icon bookmark">bookmark_border</mat-icon>
+                        <mat-icon class="icon read">done</mat-icon>
+                    </div> -->
                 </div>
-            </div>
         </div>
         <!-- <div *ngFor="let book of data">
             <div class="book-box">

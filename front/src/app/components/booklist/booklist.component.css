@@ -77,8 +77,6 @@
 
 .book-box .followers {
   display: flex;
-  justify-content: right;
-  /* margin-top: 55%; */
 }
 
 .book-box .icon {
@@ -87,5 +85,4 @@
 
 .book-box .icon.heart {
   color: red;
-  margin-left: 5px;
 }

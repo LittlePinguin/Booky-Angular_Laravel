@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/service/data.service';
 
 @Component({
@@ -9,8 +10,10 @@ import { DataService } from 'src/app/service/data.service';
 export class BooklistComponent implements OnInit {
   data:any;
   books:any;
+  book:any;
+  id:any;
   
-  constructor(private dataService:DataService) { }
+  constructor(private dataService:DataService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getBooksData();
@@ -27,5 +30,12 @@ export class BooklistComponent implements OnInit {
     this.dataService.getSearchBookName(keyword).then(response =>{
       this.data = response;
     });
+  }
+
+  getBookDetails() {
+    this.id = +this.route.snapshot.paramMap.get('id')!;
+    this.dataService.getBookDetailsById(this.id).then(response => {
+      this.book = response;
+    })
   }
 }
